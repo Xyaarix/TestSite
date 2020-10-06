@@ -1,0 +1,173 @@
+.cmove {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.menu {
+  display: block;
+  position: absolute;
+  background-color: rgba(184, 134, 11, 100);
+  left: 95vw;
+  top: -1vh;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 100%;
+  opacity: 0;
+}
+.menu:hover {
+  transition-duration: 1.5s;
+  background-color: rgb(103, 136, 156);
+}
+.m1 {
+  animation-name: menu1;
+  animation-duration: 1s;
+  animation-delay: 300ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes menu1 {
+  100% {
+    top: 7vh;
+    left: 83vw;
+    transform: scale(2);
+    opacity: 1;
+  }
+}
+.m2 {
+  animation-name: menu2;
+  animation-duration: 1s;
+  animation-delay: 350ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes menu2 {
+  100% {
+    top: 21.5vh;
+    left: 87vw;
+    transform: scale(2);
+    opacity: 1;
+  }
+}
+.m3 {
+  animation-name: menu3;
+  animation-duration: 1s;
+  animation-delay: 400ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes menu3 {
+  100% {
+    top: 31vh;
+    left: 94vw;
+    transform: scale(2);
+    opacity: 1;
+  }
+}
+.bubbleanimate1 {
+  display: block;
+  position: absolute;
+  background-color: #212022;
+  left: 97.5vw;
+  top: -3.5vw;
+  width: 7vw;
+  height: 7vw;
+  border-radius: 100%;
+}
+.comin {
+  animation-name: onmouse;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.back {
+  animation-name: outmouse;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes onmouse {
+  100% {
+    transform: scale(3);
+    background-color: rgba(184, 134, 11, 100);
+  }
+}
+@keyframes outmouse {
+  100% {
+    background-color: #212022;
+    left: 97.5vw;
+    top: -3.5vw;
+    width: 7vw;
+    height: 7vw;
+  }
+}
+.content{
+  position:absolute;
+  font-size:11px;
+  line-height: 40px;
+  left: 7px;
+  top: 2px;
+  color:black;
+  text-align: center;
+  font-family: "Brush Script MT", cursive;
+}
+
+.content:hover {
+    color: hsl(0, 100%, 15%);
+}
+.um {
+  display: block;
+  position: absolute;
+  background-color: rgb(103, 136, 156);
+  border-radius: 100%;
+  width: 2vw;
+  height: 2vw;
+  opacity: 0;
+  left: 0;
+  top: 0;
+}
+.um1 {
+  animation-name: um1Move;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes um1Move {
+  100% {
+    opacity: 1;
+    left: -4vw;
+    top: 2vw;
+    background-color: hsl(0, 100%, 10%);
+  }
+}
+.um2 {
+  animation-name: um2Move;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 150ms;
+}
+@keyframes um2Move {
+  100% {
+    opacity: 1;
+    left: -7vw;
+    top: 3vw;
+    background-color: hsl(0, 100%, 13%);
+  }
+}
+.um3 {
+  animation-name: um3Move;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 300ms;
+}
+@keyframes um3Move {
+  100% {
+    opacity: 1;
+    left: -10vw;
+    top: 3.75vw;
+    background-color: hsl(0, 100%, 15%);
+  }
+}

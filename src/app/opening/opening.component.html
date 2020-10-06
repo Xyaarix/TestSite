@@ -1,0 +1,48 @@
+
+  <!--<div class="bubble" (mouseenter)="enter()" (mousemove)="mouseMove($event)">
+  </div>
+  <h2>{{x}}, {{y}}</h2>
+  <div *ngIf="entered == true">
+    <div class="menu1">
+    </div>
+  </div>-->
+  <div class="cmove" (mousemove)="update($event)">
+    <h1 style="color: aliceblue">Bubbles : {{entered}}, X : {{x}}, Y : {{y}}</h1>
+    <h3 style="color: aliceblue">Le Menu est dans le coin en haut à gauche</h3>
+    <h3 style="color: aliceblue">u1 : {{u1}}, u2 : {{u2}}, u3 = {{u3}}</h3>
+    <div *ngIf="entered == true">
+      <div class="bubbleanimate1 comin"></div>
+      <div class="menu m1">
+        <div class="content contentanime" (mousemove)="undermenuUpdate($event,1)">Activités
+          <div *ngIf="u1 == true">
+            <div class="um um1"></div>
+            <div class="um um2"></div>
+            <div class="um um3"></div>
+          </div>
+      </div>
+    </div>
+      <div class="menu m2">
+        <div class="content contentanime" (mousemove)="undermenuUpdate($event,2)">Médias
+          <div *ngIf="u2 == true">
+            <div class="um um1"></div>
+            <div class="um um2"></div>
+            <div class="um um3"></div>
+          </div>
+        </div>
+      </div>
+      <div class="menu m3">
+        <div class="content contentanime"(mousemove)="undermenuUpdate($event,3)">Contact
+          <div *ngIf="u3 == true">
+            <div class="um um1"></div>
+            <div class="um um2"></div>
+            <div class="um um3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="entered == false">
+      <div class="bubbleanimate1 back"></div>
+    </div>
+  </div>
+
+
